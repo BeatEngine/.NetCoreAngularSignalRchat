@@ -1,0 +1,1 @@
+C:\Users\David\source\repos\AngularDemoChatSignalR\angulardemochatsignalr.client\obj\Debug\angulardemochatsignalr.client.esproj.CoreCompileInputs.cache

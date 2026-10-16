@@ -1,0 +1,25 @@
+.chatHead {
+  display: block;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: darkgreen;
+  color: antiquewhite;
+  font-size: 2vw;
+  height: 7vh;
+  line-height: 7vh; /* center vertical text*/
+}
+
+.chatHead > *{
+  margin-inline: 2vw;
+}
+
+.chat-head-element {
+    display: inline-block;
+    float: left;
+}
+
+.chat-head-element > select {
+  font-size: 1.8vw;
+}

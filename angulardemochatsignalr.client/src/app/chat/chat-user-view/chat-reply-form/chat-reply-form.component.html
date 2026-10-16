@@ -1,0 +1,8 @@
+<div class="chat-reply-form-container">
+    <textarea #ChatMessageTextArea placeholder="New message." (change)="OnTextChange($event.target)"></textarea>
+    <div class="button-send">
+        <img src="/chat/send.png" (click)="SendMessage()" />
+    </div>
+
+</div>
+

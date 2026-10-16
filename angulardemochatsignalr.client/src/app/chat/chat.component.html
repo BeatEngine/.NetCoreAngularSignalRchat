@@ -1,0 +1,23 @@
+
+<div #userChat class="user-chat chat-font">
+    @if(currentChatPartner() == null)
+    {
+    <chat-head [users]="users()"></chat-head>
+    <ul class="user-chat-ul">
+        @for(chatUser of userChats(); track chatUser.userId)
+        {
+        <li class="chat-item-li" (click)="openChatOnClk(chatUser)">
+            <chat-item [chatUser]="chatUser"></chat-item> <!-- NO_ERRORS_SCHEMA -->
+        </li>
+        }
+        @empty
+        {
+        <p>No chats available.</p>
+        }
+    </ul>
+    }
+    @else
+    {
+    <chat-user-view> </chat-user-view>
+    }
+</div>

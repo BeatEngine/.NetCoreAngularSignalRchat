@@ -1,0 +1,59 @@
+
+
+.chat-reply-form-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: darkkhaki;
+  color: black;
+
+}
+
+.chat-reply-form-container > textarea {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 4px solid burlywood;
+  width: calc(100% - 15vw);
+  height: calc(100% - 14px);
+  resize: none;
+  background-color: darkkhaki;
+  color: black;
+  font-size: 2vw;
+}
+
+.chat-reply-form-container > textarea:focus {
+  border: 4px solid darkseagreen !important;
+  outline: none !important;
+  box-shadow: 0 0 10px darkseagreen;
+}
+
+.button-send {
+  position: absolute;
+  left: calc(100% - 14vw);
+  height: 100%;
+  width: 7vh;
+  top: 0;
+  //
+  display: block;
+  background-color: forestgreen;
+  clip-path: circle(calc(calc(7vh / 2) - 1vh));
+}
+
+.button-send > img {
+  position: relative;
+  top: calc(50% - calc(7vh / 2));
+  display: inline-block;
+  vertical-align: central;
+  //transform: translateY(50%); /*vertical middle*/
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.button-send > img:hover {
+    cursor: pointer;
+}

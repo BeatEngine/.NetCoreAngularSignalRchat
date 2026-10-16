@@ -1,0 +1,106 @@
+
+/* ---- max height 70vh ---- */
+
+.chat-font {
+  font-family: Carlito;
+}
+
+.chat-reply-form {
+  display: contents;
+}
+
+.chat-user-head {
+  display: block;
+  position: sticky;
+  top:0px;
+  width: 100%;
+  z-index: 1;
+  background-color: darkgreen;
+  color: antiquewhite;
+  font-size: 3vw;
+  height: 7vh;
+  line-height: 7vh; /* center vertical text*/
+}
+
+.chat-user-head-back {
+  display: inline-flex;
+  float: left;
+  width: 30%;
+  margin-right: 10%;
+  font-size: 3vw;
+  background-color: #666600;
+  clip-path: polygon(0% 0%, 100% 50%,0% 100%) /* rectangle like '>' */
+}
+.chat-user-head-name {
+  display: inline-flex;
+  text-align: left;
+  float: right;
+  width: 60%;
+  font-size: 3vw;
+}
+
+.chat-message-container {
+  display: ruby block; /* outer block and inner flexible */
+  min-height: 70vh;
+  background-color: antiquewhite;
+  height: auto;
+}
+
+.chat-message-container > * {
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.chat-message-timestamp {
+  color: gray;
+  position: relative;
+  text-align: left;
+  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-message-text {
+    text-wrap:stable;
+}
+
+.chat-message-reply {
+  display: block;
+  position: sticky; /* Needed for position */
+  overflow-y: auto; /* Needed for position */
+  bottom: 0px;
+  z-index: 1;
+  height: 15vh;
+  width: 100%;
+  background-color: burlywood;
+}
+
+.chat-message-li {
+  display: inline-block;
+  padding: 1vh;
+  width: 70%;
+  line-height: 3vh;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3vh;
+  text-wrap: pretty;
+  color: darkolivegreen;
+  margin-inline: 10%;
+  margin-bottom: 1vh;
+  border-radius: 1vh;
+}
+
+.chat-message-li:last-of-type {
+  margin-bottom: 1vh;
+}
+
+.chat-message-li-my-msg {
+  float: inline-start;
+  background-color: burlywood;
+}
+.chat-message-li-partner-msg {
+  float: inline-end;
+  background-color: SandyBrown;
+}
+

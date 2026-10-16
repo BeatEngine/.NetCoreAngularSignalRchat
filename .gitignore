@@ -1,0 +1,10 @@
+#VS
+.vs
+#Modules
+node_modules
+#TEST
+TestResults
+# Demos
+!demo1.png
+!demo2.png
+!demo3.png

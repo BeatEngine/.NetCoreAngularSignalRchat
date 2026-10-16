@@ -1,0 +1,32 @@
+<div class="chatHead">
+    <span class="chat-head-element">
+        <label>Change user: </label>
+        <select id="select-user-chat-head" (change)="OnSelectUser($event.target)">
+            @if(myUser().userId > -1)
+            {
+            <option [value]="myUser().userId">{{myUser().userId}} - {{myUser().userName}}</option>
+            }
+            @else
+            {
+            <option value=""></option>
+            }
+            @for(user of users(); track user.userId)
+            {
+            <option [value]="user.userId">{{user.userId}} - {{user.userName}}</option>
+            }
+        </select>
+    </span>
+
+    <span class="chat-head-element">Down there are the chats</span>
+
+    <span class="chat-head-element">
+        <label>Open chat with: </label>
+        <select id="select-user-chat-head-partner" (change)="OnSelectPartner($event.target)">
+            <option value=""></option>
+            @for(user of users(); track user.userId)
+            {
+            <option [value]="user.userId">{{user.userId}} - {{user.userName}}</option>
+            }
+        </select>
+    </span>
+</div>

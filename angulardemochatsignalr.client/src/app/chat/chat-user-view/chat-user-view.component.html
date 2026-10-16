@@ -1,0 +1,18 @@
+<div class="chat-user-head">
+    <span class="chat-user-head-back" (click)="closeCurrentUserChat()">Go Back</span> <span class="chat-user-head-name">{{GetPartnerName()}}</span>
+</div>
+<div #chatMessageContainer class="chat-message-container chat-font">
+    <ul #chatMessageList>
+        @for(message of messages(); track message.created)
+        {
+        <li [class]="getClassDependingAuthor(message.userId)">
+            <div class="chat-message-timestamp">{{message.created}}</div>
+            <div class="chat-message-text">{{message.message}}</div>
+        </li>
+        }
+    </ul>
+</div>
+<div #chatReplyContainer class="chat-message-reply chat-font">
+    <chat-reply-form class="chat-reply-form"></chat-reply-form>
+</div>
+

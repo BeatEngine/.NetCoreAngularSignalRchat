@@ -1,0 +1,25 @@
+
+
+
+.chat-item-li-user-name {
+  display: inline-block;
+  width: 30%;
+  line-height: 8vh;
+  justify-self: left;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3vw;
+  text-wrap: nowrap;
+  color: beige;
+  margin-right: 10%;
+}
+
+.chat-item-li-user-prev {
+  width: 60%;
+  line-height: 8vh;
+  justify-self: left;
+  text-align: left;
+  font-size: 2.5vw;
+  text-wrap: nowrap;
+  color: gray;
+}
