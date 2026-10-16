@@ -136,32 +136,11 @@ export class Chat {
      * Start the realtime SignalR (websocket e.g.) connection
      */
     private async startRealtimeConnection() {
-      //if (this.realtimeIsActive < 1) {
-        // No realtime connection active
-        //if (this.restIsActive > 0) {
-          // Rest currently fetching
-          //setTimeout(this.startRealtimeConnection.bind(this), 100);
-        //}
-        //else {
-          // No active Rest fetch
-          //this.restIsActive = 0;
-          //this.realtimeIsActive++;
-          // Start and then register the connection with userId
           this.realtimeConnection.start().then( () => {
             this.realtimeConnectionRegisterUser();
           }
           ).catch((err) => console.error(err));
-        //}
-      //}
     }
-
-  private stopRealtimeConnection() {
-    //this.realtimeConnection.stop().then(() => {
-    //  this.realtimeIsActive = 0;
-    //}
-    //);
-     
-  }
 
   /**
    * Register the connection by userId
@@ -183,13 +162,10 @@ export class Chat {
 
   private restIsActive: number = 0;
   private beforeRest() {
-    //this.restIsActive++;
-    //if (this.realtimeIsActive > 0) {
-    //  this.stopRealtimeConnection();
-    //}
+
   }
   private afterRest() {
-    //this.restIsActive--;
+
   }
 
   /**
