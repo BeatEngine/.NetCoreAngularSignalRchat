@@ -1,8 +1,18 @@
-
 /* ---- max height 70vh ---- */
 
 .chat-font {
   font-family: Carlito;
+}
+
+.chat-bubble-inherited {
+    background: inherit;
+    color: inherit;
+    width: 100%;
+    margin-block: 0;
+    max-width: inherit;
+}
+.chat-no-padding {
+  padding: 0 !important;
 }
 
 .chat-reply-form {

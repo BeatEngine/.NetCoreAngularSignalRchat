@@ -57,13 +57,13 @@ export class ChatUserView {
    * @returns chat-message-li and ( chat-message-li-my-msg or chat-message-li-partner-msg )
    */
   protected getClassDependingAuthor(authorId: number):string {
-    let classes = "chat-message-li";
+    let classes = "";
 
     if (authorId == this.initUserId) {
-      classes += " chat-message-li-my-msg";
+      classes += "chat-message-li-my-msg chat-end";
     }
     else {
-      classes += " chat-message-li-partner-msg";
+      classes += "chat-message-li-partner-msg chat-start";
     }
 
     return classes as string;

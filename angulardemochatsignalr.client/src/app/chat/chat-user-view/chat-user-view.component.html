@@ -5,9 +5,11 @@
     <ul #chatMessageList>
         @for(message of messages(); track message.created)
         {
-        <li [class]="getClassDependingAuthor(message.userId)">
-            <div class="chat-message-timestamp">{{message.created}}</div>
-            <div class="chat-message-text">{{message.message}}</div>
+        <li [class]="getClassDependingAuthor(message.userId)+' chat chat-message-li chat-no-padding'">
+            <div class="chat-bubble chat-bubble-inherited">
+                <div class="chat-message-timestamp">{{message.created}}</div>
+                <div class="chat-message-text">{{message.message}}</div>
+            </div>
         </li>
         }
     </ul>
