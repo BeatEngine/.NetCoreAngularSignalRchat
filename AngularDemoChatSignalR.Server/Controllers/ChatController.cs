@@ -217,11 +217,9 @@ namespace AngularDemoChatSignalR.Server.Controllers
         /// </summary>
         /// <returns>ChatUser</returns>
         [HttpGet("currentuser")]
-        public ChatUser GetCurrentUser()
+        public async Task<ChatUser> GetCurrentUser()
         {
-            Task<User> task = userRepository.GetUserById(GetCurrentUserId());
-            task.Wait();
-            User usr = task.Result;
+            User usr = await userRepository.GetUserById(GetCurrentUserId());
             return new ChatUser(usr.UserId, usr?.UserName ?? "");
         }
     }

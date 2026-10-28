@@ -180,7 +180,7 @@ namespace AngularDemoChatSignalR.Server.Tests.UnitTests.Database.Repositories
             catch (Exception ex)
             {
             }
-}
+        }
 
         private void CheckPreTestRequirements()
         {

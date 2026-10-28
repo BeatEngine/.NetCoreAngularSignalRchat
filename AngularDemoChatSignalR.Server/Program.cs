@@ -81,3 +81,6 @@ INITDEMO();
 //############################# END DEMO INIT DB #########################################
 
 app.Run();
+
+// For mock test detection
+public partial class Program { } 
