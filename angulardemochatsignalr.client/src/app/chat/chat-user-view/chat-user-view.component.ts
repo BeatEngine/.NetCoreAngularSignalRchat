@@ -60,10 +60,10 @@ export class ChatUserView {
     let classes = "";
 
     if (authorId == this.initUserId) {
-      classes += "chat-message-li-my-msg chat-end";
+      classes += "chat-message-li-my-msg chat-start";
     }
     else {
-      classes += "chat-message-li-partner-msg chat-start";
+      classes += "chat-message-li-partner-msg chat-end";
     }
 
     return classes as string;
